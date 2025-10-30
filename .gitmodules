@@ -1,3 +1,6 @@
 [submodule "post-microservice"]
 	path = post-microservice
 	url = git@github.com:efraxpc/post-microservice.git
+[submodule "user-microservice"]
+	path = user-microservice
+	url = git@github.com:efraxpc/user-microservice.git
