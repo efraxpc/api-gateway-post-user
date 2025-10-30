@@ -12,8 +12,8 @@ const limiter = rateLimit({
 const app = express();
 
 async function getAggregatedData(id) {
-    const postResponse = await axios.get(`http://post-microservice:3001/posts/${id}`);
-    const userResponse = await axios.get(`http://user-microservice:3002/users/${id}`);
+    const postResponse = await axios.get(`http://post-microservice:3005/posts/${id}`);
+    const userResponse = await axios.get(`http://user-microservice:3006/users/${id}`);
 
     const aggregatedData = {
         data: {
@@ -45,6 +45,6 @@ app.get('/users/:id', limiter, async (req, res) => {
 
 });
 
-app.listen(3000, () => {
-    console.log('API Gateway listening on port 3000');
+app.listen(3007, () => {
+    console.log('API Gateway listening on port 3007');
 });
