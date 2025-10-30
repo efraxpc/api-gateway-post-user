@@ -11,10 +11,13 @@
   "author": "Efrain Guerrero",
   "license": "ISC",
   "type": "commonjs",
-"dependencies": {
+  "dependencies": {
     "apicache": "^1.6.3",
     "axios": "^1.7.2",
     "express": "^4.19.2",
     "express-rate-limit": "^7.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
